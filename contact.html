@@ -3,147 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech Store Contact us</title>
+  <title>Shoping Store: Product Detail</title>
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Tech Store</h1>
+  <header> 
+    <h1>Shoping Store</h1>
     <nav>
       <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="">shop</a></li>
-        <li><a href="contact.html">contact us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="contact.html">Contact us</a></li>
       </ul>
     </nav>
-      <input type="search" placeholder="Search...">
+    <input type="search" placeholder="Search....">
   </header>
-
+ 
   <aside>
-    <h2>Shop by:</h2>
+    <h2>Shop by</h2>
     <section>
       <h3>Category</h3>
-      <hr>
-      <ul>
-        <li>All items</li>
-        <li>Cameras</li>
-        <li>Laptops</li>
-        <li>Phones</li>
-        <li>Accessories</li>
-        <li>Other</li>
-      </ul>
+    <hr>
+    <ul>
+      <li>All items</li>
+      <li>Cameras</li>
+      <li>Laptops</li>
+      <li>Phones</li>
+      <li>Accessories</li>
+      <li>Other</li>
+    </ul>
     </section>
-
+    
     <section>
       <h3>Price <span>($)</span></h3>
-      <hr>
-      <ul>
-        <li>1-9</li>
-        <li>10-29</li>
-        <li>30-59</li>
-        <li>60-99</li>
-        <li>100 +</li>
-      </ul>
+    <hr>
+    <ul>
+      <li>1-9</li>
+      <li>10-29</li>
+      <li>30-59</li>
+      <li>60-99</li>
+      <li>100+</li>
+    </ul>
     </section>
-  </aside>
-
-
-  <!--Contact us main section-->
-  <main>
-    <h1>Contact us:</h1>
-    <form>
-        <div class="inline">
-          <label for="name">Name:</label>
-          <input type="text" placeholder="Enter your name" id="name" name="name">
-        </div>
-
-        <div class="inline">
-          <label for="email">Email:</label> <input type="email" placeholder="Enter your email" id="email" name="email">
-        </div>
-
-        <div class="inline">
-          <label for="message">Message:</label>
-          <textarea cols="30" rows="5" id="message" name="message"></textarea>
-        </div>
-
-        <!--<div>
-          <label for="subject">Subject:</label>
-          <select id="subject" >
-            <optgroup label="Product issues">
-              <option value="returns">Returns</option>
-              <option value="faulty_item">Faulty item</option>
-            </optgroup>
-            
-            <optgroup label="Delivery">
-              <option value="delivery">Delivery info</option>
-              <option value="order_tracking">Tracking my order</option>
-            </optgroup>
-            
-            <optgroup label="Other">
-              <option value="advice">Advice</option>
-              <option value="other">Other</option>
-            </optgroup>
-          </select>
-        </div>-->
-
-        <div class="inline">
-          <label  for="subject">Subject:</label>
-          <input type="text" list="subjects" id="subject" placeholder="Enter your subject">
-          <datalist id="subjects">
-            <option value="returns">
-            <option value="faulty item">
-            <option value="delivery">
-            <option value="order tracking">
-            <option value="advice">  
-            <option value="other">
-          </datalist>
-        </div>
-
-        <div>
-          <p>Subscribe to future offers by:</p>
-          <label for="newsletter">Newsletter</label>
-          <input type="checkbox" id="newsletter" name="Subscribe" value="newsletter">
-
-          <label for="email">Email</label>
-          <input type="checkbox" id="email" name="Subscribe" value="email">
-
-          <label for="post">Post</label>
-          <input type="checkbox" id="post" name="Subscribe" value="post">
-        </div>
-
-        <div>
-          <p>How would  you like  to respond?</p>
-          <label for="phoneResponse">Phone</label>
-          <input type="radio" id="phoneResponse" name="response" value="phone">
-          
-          <label for="emailResponse">Email</label> 
-          <input type="radio" id="emailResponse" name="response" value="email">
-        </div>
-
-        <div>
-          <input type="submit">
-          <!--<button type="submit">Submit</button>-->
-          <input type="reset">
-        </div>
-      </form>
-
-      <!-- for more pratice Other useful form elements:  such as number, password, date, color, range and search. you can type on "_" here
-      <form>
-        <input type="date">
-      </form>-->
-
     
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448193.9510320039!2d76.76356826600096!3d28.644287353093404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1720496648325!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        
-      </iframe>
-    </main>
+  </aside>
+  
+  <!--Main section to display products:-->
+  <main>
+    <h2>Contact Us:</h2>
+    <form>
+      <div class="inline">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Name" id="name" name="name">
+      </div>
+      
+      <div class="inline">
+        <label for="email">Email:</label>
+      <input type="email"  placeholder="abc@gmail.com" id="email" name="email">
+    </div>
+      
+    <div class="inline">
+      <label for="message">Message:</label>
+      <textarea rows="5" cols="30" id="message" name="message"></textarea>
+    </div>
+  
+    <div class="inline">
+      <label for="subject">Subject:</label>
+      <input list="subjects" type="text" id="subject" placeholder="Enter your subject" name="subject">
 
+      <datalist id="subjects">
+        <option value="returns">
+        <option value="faulty item">
+        <option value="delivery">
+        <option value="order tracking">
+        <option value="advice">
+        <option value="other">
+      </datalist>
+      
+    </div>
+  
+    <div>
+      <p>Subscribe to future offers by:</p>
+      <label for="newsletter">Newsletter</label>
+      <input type="checkbox" id="newsletter" name="subscribe" value="newsletter">
+  
+      <label for="email">Email</label>
+      <input type="checkbox" id="email" name="subscribe" value="email">
+  
+      <label for="post">Post</label>
+      <input type="checkbox" id="post" name="subscribe" value="post">
+    </div>
+  
+    <div>
+      <p>How would you like us to respond?</p>
+      <label for="phoneResponse">Phone</label>
+      <input type="radio" id="phoneResponse" name="response" value="phone">
+      
+      <label for="emailResponse">Email</label>
+      <input type="radio" id="emailResponse" name="response" value="email">
+    </div>
+  
+    <div>
+      <input type="submit">
+      <input type="reset">
+    </div>
+    </form>
+    
+  
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317716.6064121449!2d-0.43124015949627104!3d51.52860701886993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1723190138500!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  
+</main>
   <footer>
     <nav>
       <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="">shop</a></li>
-        <li><a href="contact.html">contact us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="contact.html">Contact us</a></li>
       </ul>
     </nav>
   </footer>
