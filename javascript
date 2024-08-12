@@ -60,3 +60,14 @@ const name='Sejal'
 //name="Priya"
 //console.log(name) //result: errror will give when you change the value in const
 
+const pi=3.17;
+console.log(pi*3)
+
+9.51
+
+//////
+const your="Deepika"; // constant value
+console.log(your)
+
+Deepika
+
