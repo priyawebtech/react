@@ -68,6 +68,37 @@ console.log(pi*3)
 //////
 const your="Deepika"; // constant value
 console.log(your)
-
 Deepika
 
+////
+let gender;
+console.log(gender)
+
+/// undefined
+
+//
+let num1;
+console.log(num1+40)
+
+NaN (not a number)
+///
+let num1=50;
+num1=true
+console.log(num1+40)
+console.log(typeof num1)
+
+boolean
+
+////////////
+let check=40
+console.log(check)
+console.log(typeof check)
+
+Re: 40
+number
+
+/////////////////
+
+console.warn('This is a warning')
+alert('Hey')
+console.error('I am an error')
