@@ -1,0 +1,174 @@
+if(condition){
+    // if condition is true this part of logic will work
+}else{
+    // if condition is false this part of logic will work
+}
+
+let age=11;
+if(age>18){
+  console.log('Adult') // if not true it will not show on console browser only true thing will show
+}
+
+/////
+let age=21;
+if(age>18){
+  console.log('Adult')// it true it will show the person is audlt
+}
+Re: Adult
+
+////////
+
+let age=11;
+if(age>18){
+  console.log('Adult')
+}else{
+  console.log('Not an Adult')
+}
+
+Re: Not an Adult
+
+///////////
+let pswd='123abc'
+if(pswd=='123abc'){
+  console.log('Valid Password')
+}else{
+  console.log('Invalid Password')
+}
+
+Re: Valid Password
+
+///// slightly change in the above password show invalid password
+let pswd='123abc'
+if(pswd=='123abcd'){
+  console.log('Valid Password')
+}else{
+  console.log('Invalid Password')
+}
+
+Re: Invalid Password
+
+////////////
+let age=11;
+if(age==18){
+  console.log('Your age is 18')
+}else{
+  console.log('invalid age')// Re: invalid age
+}
+
+/////////////////
+let age=18;
+if(age==18){
+  console.log('Your age is 18')// RE: Your age is 18
+}else{
+  console.log('invalid age')
+}
+
+////////////////
+let age='18';// if u are using stings will get correct result on ==
+//'18'==18
+if(age==18){
+  console.log('Your age is 18')// RE: Your age is 18
+}else{
+  console.log('invalid age')
+}
+//////////////
+let age='18';// if using === '18'===18 compare the data and datatype need to equal. one is string and another one is number
+if(age===18){
+  console.log('Your age is 18')// 
+}else{
+  console.log('invalid age')//Re: invalid age
+}
+///////////////
+let age=18; // === datatype need to be same
+
+if(age===18){
+  console.log('Your age is 18')// Re:Your age is 18
+}else{
+  console.log('invalid age')
+}
+
+/// 90% we use === equal two
+
+///
+Multiple conditions
+score<30- fail
+score 30-60-pass
+60-80-first class
+>80-distiction
+
+if(condition1){
+  statement1
+}else if(condition2){
+  statement2
+}else if(condition3){
+  statement3
+}
+
+//
+let score=20
+if(score<30){
+  console.log('Fail')//Re: Fail
+}
+///
+let score=40
+if(score<30){
+  console.log('Fail')//
+}
+else if(score>=30 && score<60){
+  console.log('Pass')// Bothe conditions needs to true in && logical and then it will show Pass other wise fail and check next conditions
+}
+//////////////////
+let score=60
+if(score<30){
+  console.log('Fail')//Re: Fail
+}
+else if(score>=30 && score<60){
+  console.log('Pass')// Bothe conditions needs to true in && logical and then it will show Pass other wise fail and check next conditions
+}
+else if(score>=60 && score<80){
+  console.log('Firstclass')
+}
+else if(score>=80 && score <=100){
+  console.log(Distiction)
+}
+
+Re: Firstclass
+///////////
+let score=80
+if(score<30){
+  console.log('Fail')//Re: Fail
+}
+else if(score>=30 && score<60){
+  console.log('Pass')// Bothe conditions needs to true in && logical and then it will show Pass other wise fail and check next conditions
+}
+else if(score>=60 && score<80){
+  console.log('Firstclass')
+}
+else if(score >=80 && score <=100){
+  console.log('Distiction')
+}
+
+Re:Distiction
+/////
+let score=103
+if(score<30){
+  console.log('Fail')//Re: Fail
+}
+else if(score>=30 && score<60){
+  console.log('Pass')// Bothe conditions needs to true in && logical and then it will show Pass other wise fail and check next conditions
+}
+else if(score>=60 && score<80){
+  console.log('Firstclass')
+}
+else if(score >=80 && score <=100){
+  console.log('Distiction')
+}
+else{
+  console.log('Invalid score-enter score between 0-100')
+}
+//either the above one other wise u can use this one to show eroror . console.eroror/console.log I can use console.eroro to show the eroror 
+else{
+  console.error('Invalid score-enter score between 0-100')
+}
+
+RE: Invalid score-enter score between 0-100
