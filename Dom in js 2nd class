@@ -1,0 +1,64 @@
+const h1=document.getElementById('myh1')
+console.log(h1)
+<h1 id="myh1">Hellow</h1>
+
+/////////////////////
+const h1=document.getElementById('myh1')
+console.log(h1)
+
+h1.style.color= 'green'
+h1.style.fontSize='50px'
+h1.innerHTML='Welcome'
+
+Re: on console <h1 id="myh1" style="color:green; font-size:50px;">Hellow</h1>
+/// you can perform all operations of css in html
+
+?????????????????????????
+const h1=document.getElementById('myh1')
+console.log(h1)
+
+h1.style.color= 'green'
+h1.style.fontSize='80px'
+// h1.innerHTML='Oh God'
+
+let isLoggedIn=true;
+if(isLoggedIn){
+  h1.innerHTML='Welcome user'
+}else{
+  h1.innerHTML='Welcome guest'
+}
+
+Re: Welcome user
+
+????????????????????
+
+const h1=document.getElementById('myh1')
+console.log(h1)
+
+h1.style.color= 'green'
+h1.style.fontSize='80px'
+// h1.innerHTML='Oh God'
+
+let isLoggedIn=false;/// if use not logged in 
+if(isLoggedIn){
+  h1.innerHTML='Welcome user'
+}else{
+  h1.innerHTML='Welcome guest'
+}
+
+Re: Welcome guest
+??????????????????????????????????
+
+html file:  <h2 id="h2">h2</h2>
+
+js file : document.getElementById('h2').innerHTML='I am h2'// you can do direct like this also but use in short one that is much good
+
+Re:I am h2 
+?????????????????????????
+
+let h2=document.getElementById('h2')
+h2.innerHTML='I can do it'
+h2.style.color='blue'
+h2.style.fontSize='60px'
+
+Re: I can do it
