@@ -62,3 +62,11 @@ h2.style.color='blue'
 h2.style.fontSize='60px'
 
 Re: I can do it
+
+???????????????????????
+let ommm=document.getElementById('love')
+ommm.innerHTML='I love you my family I can do it'
+ommm.style.fontSize="35px"
+ommm.style.fontStyle="italic"
+ommm.style.background="lightblue"
+ommm.style.textAlign="center"
