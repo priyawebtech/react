@@ -47,6 +47,41 @@ if(isLoggedIn){
 }
 
 Re: Welcome guest
+
+??????????????????
+<body>
+<h1 id="myh1">Welcome</h1>
+</body>
+
+// Dom section
+document.getElementById('myh1')
+const h1 = document.getElementById('myh1')
+console.log(h1)
+h1.style.color='green'
+// h1.style.fontSize="80px"
+// h1.innerHTML="I can do it"
+// h1.style.fontStyle= "Italic"
+
+let userLoggedIn=false;
+if(userLoggedIn){
+  h1.innerHTML='Welcome back'
+  h1.style.color='Blue'
+}else{
+  h1.innerHTML='Welcome Guest'
+}
+?????????????????///
+<body>
+<h2 id="h2tag"></h2>
+</body>
+
+// const myWork = document.getElementById('h2tag')
+// console.log(myWork)
+// myWork.innerHTML='Hi everyone'
+// myWork.style.fontSize= "70px"
+// myWork.style.color='Pink'
+// myWork.style.fontFamily="Arial"
+// myWork.style.border='2px solid blue'
+// myWork.style.textAlign='center'
 ??????????????????????????????????
 
 html file:  <h2 id="h2">h2</h2>
