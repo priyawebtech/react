@@ -183,8 +183,8 @@ RE: Invalid score-enter score between 0-100
 //   console.log("Teenager")
 // }else if(age>=16 && age<60){
 //   console.log("Adult")
-// }else if(age>=60 && age<103){
+// }else if(age>=60 && age<=103){
 //   console.log("Old")
-// }else if(age>=103){
+// }else{
 //   console.log("Invalid age")
 // }
