@@ -105,3 +105,19 @@ ommm.style.fontSize="35px"
 ommm.style.fontStyle="italic"
 ommm.style.background="lightblue"
 ommm.style.textAlign="center"
+
+???????????????????????????
+// dom pratice
+
+let h3tag= document.getElementById('idname')
+h3tag.innerHTML="Welcome to Javascript class"
+h3tag.style.fontSize="80px"
+h3tag.style.color='Blue'
+h3tag.style.fontStyle='Italic'
+
+const letmedo=false;
+if(letmedo){
+  h3tag.innerHTML='Come in'
+}else{
+  h3tag.innerHTML='Get out'
+}
