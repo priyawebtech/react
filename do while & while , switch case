@@ -1,0 +1,7 @@
+// // do while loop
+// x=3;
+// do{
+//   console.log('this is do while loop')
+//   x++ //6
+// }while(x<5)
+
