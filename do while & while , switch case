@@ -25,3 +25,72 @@ Re: 5 tiems execute: this is while loop. Only in true value going to execute
   // }
 
 Re: If num is 10<5 it's false. So not going to execute. Only in true going to execute.
+???????????????????
+
+//switch case
+// user will input day-output will day code
+
+let day='';
+
+switch(day){
+  case 'sunday':
+        console.log('the code is 0');
+        break;
+
+  case 'monday':
+        console.log('the code is 1');
+        break;
+
+  case 'tuesday':
+        console.log('the code is 2');
+        break;
+  
+  case 'Wednesday':
+          console.log('the code is 3');
+          break;
+          
+  case 'thursday':
+        console.log('the code is 4');
+        break;
+        
+  case 'friday':
+        console.log('the code is 5');
+        break;
+    
+  case 'saturday':
+        console.log('the code is 6');
+        break;
+
+  default:
+    console.log('Invalid day');
+    break;     
+}
+
+
+  Re: Invalid day
+
+let day='sunday';
+
+Re: the code is 0
+??????????????????????????
+// for loop
+//print number from 0 to 100
+for(i=0; i<=100; i++){
+  console.log(i)
+}
+
+RE: 100 times 1-100
+?????????????????
+// for loop
+//print number from 0 to 100
+for(i=0; i<=100; i++){
+  console.log('Hellow')
+}
+
+RE: 101 times Hellow
+?????????????????????
+//print reverse number
+for(i=100; i>=0; i--){
+  console.log(i)
+}
+
