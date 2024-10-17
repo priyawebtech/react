@@ -3,96 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shoping Store: Product Detail</title>
+  <title>Tech Store: Product detail</title>
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-  <header> 
-    <h1>Shoping Store</h1>
+  <header>
+    <h1>Tech Store</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="">Shop</a></li>
-        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./product.html">Shop</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
       </ul>
     </nav>
-    <input type="search" placeholder="Search....">
+    <input type="search" placeholder="Search...">
   </header>
- 
+
+  <!-- Aside section of the body -->
   <aside>
-    <h2>Shop by</h2>
+    <h2>Shop by:</h2>
     <section>
       <h3>Category</h3>
-    <hr>
-    <ul>
-      <li>All items</li>
-      <li>Cameras</li>
-      <li>Laptops</li>
-      <li>Phones</li>
-      <li>Accessories</li>
-      <li>Other</li>
-    </ul>
+      <hr>
+      <ul>
+        <li>All items</li>
+        <li>Cameras</li>
+        <li>Laptops</li>
+        <li>Phones</li>
+        <li>Accessories</li>
+        <li>Other</li>
+      </ul>
     </section>
     
     <section>
-      <h3>Price <span>($)</span></h3>
-    <hr>
-    <ul>
-      <li>1-9</li>
-      <li>10-29</li>
-      <li>30-59</li>
-      <li>60-99</li>
-      <li>100+</li>
-    </ul>
+      <h3>Price<span>($)</span></h3>
+      <hr>
+      <ul>
+        <li>1-9</li>
+        <li>10-29</li>
+        <li>30-59</li>
+        <li>60-99</li>
+        <li>100+</li>
+      </ul>
     </section>
     
   </aside>
-  
-  <!--Main section to display products:-->
+
+  <!-- Main section of the body -->
   <main>
-    <h2>All Items:</h2>
-  <div class="product product-detail">
-    <img src="images/antique-blue-michrophone-device-tech-generative-ai.jpg" alt="Microphone" title="Microphone">
-    <h4><a href="product-detail.html"> Yeti Microphone</a></h4>
-    <p>$ 119.95</p>
-    <p>Awesome Blue<br>Yeti Microphone!</p>
-    <a href="product-detail.html" class="button">More Info</a>
-    <a href="" class="button">Add To Cart</a>
-  </div>
+    <h2>Product detail:</h2>
 
-  <table>
-    <caption>Buy in bulk and save!</caption>
-    <thead>
-      <tr>
-        <th colspan="2">Quantity</th>
-        <th>1</th>
-        <th>2-3</th>
-        <th>5-10</th>
-        <th>10+</th>
-      </tr>
-    </thead>
+    <div class="product product-detail">
+      <a href="product.html">
+        <img src="./images/Alexa.png" alt="Alexa" title="Alexa" width="300px">
+      </a>
+      
+      <h4><a href="product.html">Alexa Device</a> &#127925;</h4>
+      <p>$ 79.95</p>
+      <p>Awesome game controller<br> for xbox!</p>
+      <a href="product.html" class="button">More info</a>
+      <a href="" class="button">Add To Cart</a>
+    </div>
 
-    <tbody>
-      <tr>
-        <th colspan="2">Price</th>
-        <td>79.95</td>
-        <td>78.95</td>
-        <td>76.95</td>
-        <td>74.95</td>
-      </tr>
-    </tbody>
-  </table>
-  
+    <table>
+      <caption>Buy in bulk and save!</caption>
+      <thead>
+        <tr>
+          <th>Quantity</th>
+          <th>1</th>
+          <th>2-3</th>
+          <th>5-10</th>
+          <th>10+</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>79.95</td>
+          <td>78.95</td>
+          <td>76.95</td>
+          <td>75.95</td>
+          <td>74.95</td>
+        </tr>
+      </tbody>
+    </table>
   </main>
 
   <footer>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="">Shop</a></li>
-        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="product.html">Home</a></li>
+        <li><a href="index.html">Shop</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
       </ul>
     </nav>
+    
   </footer>
 </body>
 </html>
