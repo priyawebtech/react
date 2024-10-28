@@ -1,4 +1,137 @@
 34:10 Ch-7-9: Create React App {IDE, Using Vite, Project Structure}
-
+1:08:01 Ch-10-16: Creating React Components {File Extensions, Class vs Function Components, JSX, Dynamic and Reusable components}
 51min video start open command prompt or terminal
 npm:node package manager
+
+terminal command: npm create vite@latest
+<Need to install the following packages:
+create-vite@5.5.4
+Ok to proceed? (y) 
+
+? Project name: » vite-project  //write here project name
+vite-project ---
+? Project name: »  first-react-app
+
+//now in which framwork you want to create
+? Select a framework: » - Use arrow-keys. Return to submit.
+>   Vanilla
+    Vue
+    React
+    Preact
+    Lit
+    Svelte
+    Solid
+    Qwik
+    Angular
+    Others
+//we want to create a project of react so we will select react
+//in react which language you want to select
+√ Project name: ...  first-react-app
+√ Select a framework: » React
+? Select a variant: » - Use arrow-keys. Return to submit.
+>   TypeScript
+    TypeScript + SWC
+    JavaScript
+    JavaScript + SWC
+    Remix ↗
+//we will select javascript
+ Project name: ...  first-react-app
+√ Select a framework: » React
+√ Select a variant: » JavaScript
+
+Scaffolding project in C:\Users\Priya\first-react-app...
+
+Done. Now run:
+
+  cd first-react-app
+  npm install
+  npm run dev
+
+C:\Users\Priya>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+//What is the LS command in npm?
+If you're not familiar with npm ls , it's a command available with the npm CLI that 
+will list dependencies that have been installed to node_modules . Additionally,
+it will return a non-zero exit code if the 
+dependency tree that's resolved in node_modules is not what should be resolved from package.
+
+C:\Users\Priya>cd first-react-app
+///open vs code <open folder of first-react-app
+//select all the file
+//first react app get open
+//close the outside terminal and now we are going to use vs code terminal
+
+in vs code open new terminal
+command: ls    // to check all the file is download
+
+PS C:\Users\Priya\first-react-app> npm install
+//packages get install. all the dependencies will find and install it. 
+
+//if we do ls .  node_modules package  got install
+PS C:\Users\Priya\first-react-app> ls
+
+//now we do npm run dev -- the server will run  to launch dev server. now the server will run
+PS C:\Users\Priya\first-react-app> npm run dev
+< > first-react-app@0.0.0 dev
+> vite
+
+
+  VITE v5.4.10  ready in 175 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
+//if you run the local host by defualt it will run means that hellow world
+//means that your project got install. dependecies installed. prject is ready for use.
+// create a react app got complete . 8 slide 23 page in pdf : file:///C:/Users/Priya/Downloads/React%20&%20Redux%20Notes.pdf
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@
+video: 1 hour
+//node_modules-- these are dependencies. don't touch these node_modules. we are using react, so u will also
+get react, dom packages
+
+///public folder--- public/ Directory: Contains static files that don't 
+change. index.html --file is also under public folder file.  images--which u show on home page, icon and favicon. 
+this type thing genrally keep in public folder.
+
+//src---actual source code. show vite has already created some source code like app.css, app.js, index.css, main.jsx
+//src/ Directory: Main folder for the React code. In source directory you have all main react code.
+    inside it genrally we will work with creating 3 folder
+    1. Assets folder react all ready have created. we will keep our images, font, videos we will keep here.
+        Images, fonts, and other static files.
+    2. components/: we can create pages small components. then we can use it. so that components code we will
+      keep here in coponents folder. Reusable parts of the UI, like buttons 
+      or headers.
+    3.styles/: CSS or stylesheets. keep in styles folder
+
+eslintrc folder: lint will provide the information that you have write something wrong in the code, mistake, warning,
+        suggestion. if you write something so give suggestion that write like this it will run fast. that tool is called
+    lint. don't touch it default config hai
+
+gitignore: these all will not check in git. gitignore have those files that we don't want that these are check in.
+
+index.html:  first file that has basic code
+
+//the most important file package.json
+package.json:  contains information about this project like name, version, dependencies on other react 
+packages. all the important information about project is keep here. from package.json -- u can directly change the name
+of the file. your app name will change not folder name.
+    two dependencies: react, react dom . latter will study on it
+
+    devDependencies: kuch ase tools and libraries hai when we write code then we need. when our project is done
+, we deploy on server, and on site then we don't need. these are those thing which help in write code.
+devDependencies -- menas download karo but file you will give somenone your app. so don't need to add there.
+
+vite.config.js---vite own config file. no specific write here. but you want to modify vite behaviour for that level
+you can do here. 
+
+package-lock.json:--- when you run npm intall. two things got created -- one is node_modules, 2nd is package-lock.json
+ package-lock.json--tell you download the latest dependencies of react. it fill tell you what finally is used. genrally don't
+check in here. if you have something gadbad or eroro. node_modules and package-lock ko delete kar again install it
+npm intall kar ligiaye. then these will new will create
+
+/// 9: we understand the project structure  
+//1:8 min done
