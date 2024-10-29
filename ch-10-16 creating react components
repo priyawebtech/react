@@ -4,4 +4,20 @@ video: 1:8 min
 
 10. file extension
 Now we will write react file we will write .jsx -- JavaScript XML. react file extension name is .jsx
+2 folder create-react-comp
+file : create-first-comp again same all process npm create vite@latest
+        Done. Now run:
 
+  cd create-first-comp
+  npm install
+  npm run dev
+
+
+//now let's check what is inside src
+//app.jsx: app component hai already made. by default diya now we don't need . we will remove it. write our own
+code.
+how to write component?
+component is a Javascript function. write a function in app.jsx
+
+13 slide of pdf. KgButton is export but not import
+importing and exporting 1: 28 min
