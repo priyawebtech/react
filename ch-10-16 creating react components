@@ -21,3 +21,193 @@ component is a Javascript function. write a function in app.jsx
 
 13 slide of pdf. KgButton is export but not import
 importing and exporting 1: 28 min
+
+KgButton.jsx and Hello.jsx  file
+
+in main.jsx file: remove css file import './index.css' // by default css is removed and our content is showing above
+15 . Dynamic components //Hello.jsx file how to make dynamic
+
+//basic coding 
+
+Hello.jsx
+
+function Hello(){
+
+  let myName = 'Prashant'
+  return <h3>
+    Hello this is the future speaking. I am your master {myName}
+  </h3>
+}
+
+export default Hello;
+
+<Hello this is the future speaking. I am your master Prashant
+
+*************************************************
+//add more content on it
+
+Hello.jsx
+function Hello(){
+
+  let myName = 'Prashant';
+  let fullName = () =>{
+    return 'Prashant Jain';
+  }
+
+  return <h3>
+    Hello this is the future speaking. I am your master {fullName()}
+  </h3>
+}
+
+export default Hello;
+
+<This is a best react course
+Hello this is the future speaking. I am your master Prashant Jain
+
+***********************************
+//for dynamic more thing include like number
+
+function Hello(){
+
+  let myName = 'Prashant';
+  let number = 456;
+  let fullName = () =>{
+    return 'Prashant Jain';
+  }
+
+  return <p>
+    MessageNo: {number} I am your master {fullName()}
+  </p>
+}
+
+export default Hello;
+
+<MessageNo: 456 I am your master Prashant Jain
+
+15. Dynamic Components
+ 1. Dynamic Content: JSX allows the 
+creation of dynamic and interactive 
+UI components.
+ 2. JavaScript Expressions: Using {}, we 
+can embed any JS expression 
+directly within JSX. This includes 
+variables, function calls, and more.
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+16. Reusable Components
+we are going to create a cards
+
+Random.jsx
+
+function Random(){
+
+  let number = Math.random() * 10;
+  
+  return <h1>Random number is: {number}</h1>
+}
+
+export default Random;
+
+<<Random number is: 6.573713802163703
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App.jsx file import of Random.jsx file is important
+import {KgButton} from "./KgButton";
+import Hello from "./Hello";
+import Random from "./Random";
+
+function App(){
+  return <div>
+    <h1>
+    This is a best react course
+  </h1>
+  <Hello></Hello>
+  <Random></Random>
+</div> 
+  
+}
+
+export default App;
+<Random number is: 6.573713802163703
+
+??????????????????????????????????????????????
+///when u change the number in Random.jsx and also reolad the link the number get changed. New random number is getting genrate
+
+function Random(){
+
+  let number = Math.random() * 100; 
+
+  return <h1>Random number is: {Math.round(number)}</h1>
+}
+
+export default Random;
+<Random number is: 27
+
+?????????????????????????????????????????
+// when u need more random number . add in App.jsx file random 
+
+App.jsx
+
+import {KgButton} from "./KgButton";
+import Hello from "./Hello";
+import Random from "./Random";
+
+function App(){
+  return <div>
+    <h1>
+    This is a best react course
+  </h1>
+  <Hello></Hello>
+  <Random></Random>
+  <Random></Random>
+  <Random></Random>
+  <Random></Random>
+  <Random></Random>
+</div> 
+  
+}
+
+export default App;
+
+<This is a best react course
+MessageNo: 456 I am your master Prashant Jain
+
+Random number is: 62
+Random number is: 44
+Random number is: 8
+Random number is: 14
+Random number is: 63
+
+???????????????????????????????????????????????????????????????
+// now in background we will define color
+
+Random.jsx
+
+function Random(){
+
+  let number = Math.random() * 100;
+
+  return <h1 style={{'background-color': '#776691'}}>Random number is: {Math.round(number)}</h1>
+}
+
+export default Random;
+<background color change
+<This is a best react course
+MessageNo: 456 I am your master Prashant Jain
+
+Random number is: 93
+Random number is: 79
+Random number is: 88
+Random number is: 73
+Random number is: 2
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Creating React Components Revision
+ 10. File Extensions
+ 11. Class vs Function Components
+ 12. What is JSX?
+ 13. Exporting component
+ 14. Other important Points
+ 15. Dynamic Components
+ 16. Reusable Components
+
