@@ -1,0 +1,177 @@
+1:54 min video start it
+17. Including Bootstrap
+17 Bootstrap folder
+
+react project name: learning-bootstrap
+server close with control c 
+Since React runs on port 3000 by default, let's use port 8080. We can quit and shut the server down with Control + C.
+
+//install bootstrap
+install the latest version from bootstrap
+npm i bootstrap@5.3.3
+
+next step : main.jsx file: add this : import 'bootstrap/dist/css/bootstrap.min.css'
+it means that bootstrap css is include here
+
+How to start your server: write>> -- npm run dev
+
+//which css is include latter that has more priority
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@
+components chalatey hai
+///go in App.jsx file :
+delete code inside return: 
+  return (
+    <>
+      
+    </>
+  )
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+now write like this 
+    return <div>
+    
+  </div>
+}
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+write :
+return <div>
+    this is my test div
+  </div>
+<this is my test div
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+now the code in App.jsx
+
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return <div>  ///this part we write it
+    this is my test div
+  </div>
+}
+
+export default App
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//now we are going to add bootstrap buttons inside return
+  return <div>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+  </div>
+}
+
+<resutl will show on vite and react link
+
+
+^^^^^^^^^^^^^^^^^^^^^^
+17 in this chapter we learn how to install bootstrap and how to use it 
+
+
+///you can remove these things we are not using falthu hai
+
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+
+function App() {
+  const [count, setCount] = useState(0)  ///these things remove it 
+
+  return <div>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+  </div>
+}
+
+export default App
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+///removed  :  const [count, setCount] = useState(0)  ///these things remove it 
+function App() {
+  return <div>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+  </div>
+}
+
+export default App
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+//these 3 above things also no need
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+
+function App() {
+  return <div>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+  </div>
+}
+
+export default App
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+///now remove it
+import './App.css'
+
+function App() {
+  return <div>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+  </div>
+}
+
+export default App
+
+?????????????????????
+cd../.. ---one folder back we have to go
+
+
+
+
+
