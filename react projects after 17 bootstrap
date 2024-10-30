@@ -1,0 +1,113 @@
+cd../.. ---one folder back we have to go
+
+Now new project in project folder
+
+now new project in terminal
+npm create vite@latest
+√ Project name: ... 1-todo-app-version-one
+Select a framework: » React
+√ Select a variant: » JavaScript
+Done. Now run:
+
+  cd 1-todo-app-version-one
+  npm install
+  npm run dev
+
+PS C:\Users\Priya\first-react-app> cd 1-todo-app-version-one
+PS C:\Users\Priya\first-react-app\1-todo-app-version-one> npm install
+//install bootstrap
+PS C:\Users\Priya\first-react-app\1-todo-app-version-one> npm i bootstrap@5.3.3
+//for check that bootstrap is installed or not check in package.json file: in dependecies
+  package.json file
+
+"dependencies": {
+    "bootstrap": "^5.3.3",   ///bootstrap is installed 
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//now go in src folder we will add dependencies
+in main.jsx we will add
+import
+ import "bootstrap/dist/css/bootstrap.min.css";
+
+< it look like this
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'   ///remove this we don't need it
+import App from './App.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+
+//now we will run our server in terminal
+PS C:\Users\Priya\first-react-app\1-todo-app-version-one> npm run dev
+
+^^^^^^^^^^^^^^^^^^^^^
+main.jsx file :
+remove : import './index.css' //
+
+<it will look like this 
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+
+
+//now we will do clean up
+
+index.css do we need it or not : no we do not need it by default it become. we will delete the whole file
+from src
+
+App.css also delete the file
+App.jsx we will empty it. make it like this
+  function App() {
+  return 
+    
+}
+
+export default App
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+we are going to create a folder inside src > components> inside it file AppName.jsx file
+check this file AppName.jsx
+
+next file: AddToDo.jsx
+
+Todoitem1.jsx file
+Todoitem2.jsx file
+Now we have to create css file for styling
+
+///////////////////////////////////////////
+Now we are going to do new prject Bharat clock 2:51 min
+
+PS C:\Users\Priya\first-react-app> cd Projects  //for come inside Project folder
+
+PS C:\Users\Priya\first-react-app\Projects> npm create vite@latest
+
+PS C:\Users\Priya\first-react-app\Projects> cd 2-bharat-clock-version-one
+PS C:\Users\Priya\first-react-app\Projects\2-bharat-clock-version-one> npm install
+
+bootstrap install: npm i bootstrap@5.3.3
+PS C:\Users\Priya\first-react-app\Projects\2-bharat-clock-version-one> npm i bootstrap@5.3.3
+
+index.css --delete
+App.css ---make it empty
+
+video : 2:54 min
+
+
+
