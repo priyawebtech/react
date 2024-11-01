@@ -97,17 +97,57 @@ Now we are going to do new prject Bharat clock 2:51 min
 PS C:\Users\Priya\first-react-app> cd Projects  //for come inside Project folder
 
 PS C:\Users\Priya\first-react-app\Projects> npm create vite@latest
+√ Project name: ... 2-bharat-clock-version-one    
+PS C:\Users\Priya\first-react-app\Projects> cd 2-bharat-clock-version-one  ///we will come inside folder
+PS C:\Users\Priya\first-react-app\Projects\2-bharat-clock-version-one> 
+PS C:\Users\Priya\first-react-app\Projects\2-bharat-clock-version-one> npm install //install npm packages
 
-PS C:\Users\Priya\first-react-app\Projects> cd 2-bharat-clock-version-one
-PS C:\Users\Priya\first-react-app\Projects\2-bharat-clock-version-one> npm install
-
-bootstrap install: npm i bootstrap@5.3.3
+///bootstrap install: npm i bootstrap@5.3.3
 PS C:\Users\Priya\first-react-app\Projects\2-bharat-clock-version-one> npm i bootstrap@5.3.3
 
+///check your project 
+package.json :  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+/// bootstrap also get installed
+
+//in src : 
 index.css --delete
 App.css ---make it empty
+      App.jsx:  delete all these file
+        import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+excepte import './App.css'
 
-video : 2:54 min
+//make it App.jsx
+  import "./App.css";
 
+function App() {
+  return <div>Clock</div>;
+}
+
+export default App;
+
+
+
+///Now run your server in terminal
+PS C:\Users\Priya\first-react-app\Projects\2-bharat-clock-version-one> npm run dev
+
+del: index.css from main.jsx folder
+
+//Now we have to create a components
+in src folder crate new folder components folder , create 3 file inside components folder
+  ClockHeading.jsx
+  ClockSlogan.jsx
+  CurrentTime.jsx
+write all the funciton inside these files different componets of your prject and import it App.jsx file
+
+//App.jsx file import bootstrap
+
+chek the file your project is ready
+now we are going in 18. Fragments
 
 
