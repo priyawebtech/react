@@ -4,32 +4,82 @@ Youtube video link:   https://www.youtube.com/watch?v=eILUmCJhl64
 Github code:  https://github.com/Complete-Coding/React_Complete_YouTube
 pdf of react: file:///C:/Users/Priya/Downloads/React%20&%20Redux%20Notes.pdf
 
-⭐️Time Stamps⭐️
-00:00 Introduction
-02:30 Ch-1-6: Introduction { React and Components}
-34:10 Ch-7-9: Create React App {IDE, Using Vite, Project Structure}
-    34 min done
+in git hub of prashant sir coding in this path : 2 first-react-app
 
-1:08:01 Ch-10-16: Creating React Components {File Extensions, Class vs Function Components, JSX, Dynamic and Reusable components}
-1:54:21 Ch-17: Introducing Bootstrap
-2:12:31 Project: Todo App Version 1
-2:49:51 Project: Bharat Clock Version 1
-3:03:24 Ch-18-22: React Level 2 {Fragments, Rendering lists using Map Method, Conditional Rendering, Passing Data via Props, CSS Modules}
-4:07:54 Project Todo App Version 2
-4:26:35 Project: Calculator Version 1
-4:50:45 Ch-23-25: React Level 3 {Passing Components as Children, Handling Events, Passing Functions via Props}
-5:38:45 Ch-26-27: State Management {useState Hook to manage Component State, State vs Props}
-6:22:20 Project: Calculator Version 2
-6:41:34 Project: Todo App Version 3
-7:23:50 Ch-28-34: React Level 3 {React-Icon Library, Inspecting with React Dev Tools, How React Works, React vs Angular vs VueJs, Forms in React, useRef Hook, Spread operator and Functional updates}
-8:38:30 Ch-35-36: Advanced State Management {Context API, useReducer Hook}
-9:42:40 Project: Social Media Version 1
-11:41:22 Ch-37-42: React Level 4 {Backend Dummy API, Data Fetching using Fetch function, useEffect Hook, Handling loading State, useEffect Hook Cleanup, Advanced useEffect }
-12:54:45 Project: Bharat Clock Version 2
-13:09:05 Ch-43-45: More Hooks {useCallback Hook, useMemo Hook, Custom Hooks}
-13:28:40 Ch-46: Submitting data with Fetch
-14:00:10 Ch-47-51: React Router {Router Layout routes, Router Links and Navigation, Data fetching using loader, Submitting data using action}
-14:55:23 Ch-52-56: Redux {Introduction, React-Context vs Redux, How Redux Works, Working with Redux, React with Redux}
-16:35:25 Ch-57-58: Redux ToolKit {Need, Working with Toolkit}
-17:19:10 Major Project Myntra Clone using Real Backend
+npm:node package manager
+
+start your command prompt or terminal
+terminal command: npm create vite@latest
+
+? Project name: » vite-project  //write here project name
+
+? Project name: »  first-react-app
+
+//now in which framwork you want to create
+? Select a framework: » - Use arrow-keys. Return to submit.
+>   Vanilla
+    Vue
+    React
+    Preact
+    Lit
+    Svelte
+    Solid
+    Qwik
+    Angular
+    Others
+//we want to create a project of react so we will select ---- react
+//in react which language you want to select
+
+? Select a variant: » - Use arrow-keys. Return to submit.
+>   TypeScript
+    TypeScript + SWC
+    JavaScript
+    JavaScript + SWC
+    Remix ↗
+//we will select javascript
+ 
+
+Done. Now run:
+
+  cd first-react-app
+  npm install
+  npm run dev
+
+C:\Users\Priya>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+//What is the LS command in npm?
+If you're not familiar with npm ls , it's a command available with the npm CLI that 
+will list dependencies that have been installed to node_modules . Additionally,
+it will return a non-zero exit code if the 
+dependency tree that's resolved in node_modules is not what should be resolved from package.
+
+Run in your command prompt----   C:\Users\Priya>cd first-react-app
+
+Now we are going to run our project in Vs
+
+///open vs code <open folder of first-react-app
+//select all the file
+//first react app get open
+//close the outside terminal and now we are going to use vs code terminal
+
+in vs code open new terminal
+command: ls    // to check all the file is download
+
+PS C:\Users\Priya\first-react-app> npm install
+//packages get install. all the dependencies will find and install it. 
+
+//if we do ls .  node_modules package  got install
+PS C:\Users\Priya\first-react-app> ls
+
+//now we do npm run dev -- the server will run  to launch dev server. now the server will run
+PS C:\Users\Priya\first-react-app> npm run dev
+
+
+  ➜  Local:   http://localhost:5173/
+
+
+
+
 
