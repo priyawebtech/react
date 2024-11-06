@@ -7,7 +7,8 @@ creating react comp
 
 10. file extension
 Now we will write react file we will write .jsx -- JavaScript XML. react file extension name is .jsx
-2 folder create-react-comp
+
+we will create-first-comp 
 file : create-first-comp again same all process npm create vite@latest
         Done. Now run:
 
@@ -22,12 +23,75 @@ code.
 how to write component?
 component is a Javascript function. write a function in app.jsx
 
-13 slide of pdf. KgButton is export but not import
-importing and exporting 1: 28 min
+src\App.jsx
 
-KgButton.jsx and Hello.jsx  file
+function App() {
+  return <h1>Hello world</h1>;
+}
+
+export default App;
+
+//new file create in src folder : KgButton.jsx
+
+function KgButton() {
+  return <button>Like this video</button>;
+}
+
+export default KgButton;
+
+< App.jsx
+
+import CrazyButton from "./CrazyButton";
+
+function App() {
+  return (
+    <div>
+      <h1>This is best react course</h1>
+      <CrazyButton></CrazyButton>
+    </div>
+  );
+}
+
+export default App;
+
+< in server in will show result: This is best react course
+Like this video
+
+/// we understand with above example importing and exporting
+
+New Component:  Hello.jsx  file
+
+function Hello() {
+  return <h3>This is future speaking.</h3>;
+}
+
+export default Hello;
+
+//App:jsx
+
+import CrazyButton from "./CrazyButton";
+import Hello from "./Hello";
+
+function App() {
+  return (
+    <div>
+      <h1>This is best react course</h1>
+      <CrazyButton></CrazyButton>
+      <Hello></Hello>
+    </div>
+  );
+}
+
+export default App;
+
+<This is best react course
+Like this video
+This is future speaking.
 
 in main.jsx file: remove css file import './index.css' // by default css is removed and our content is showing above
+
+******************************************************
+
 15 . Dynamic components //Hello.jsx file how to make dynamic
 
 //basic coding 
@@ -38,35 +102,51 @@ function Hello(){
 
   let myName = 'Prashant'
   return <h3>
-    Hello this is the future speaking. I am your master {myName}
+    Hello this is the future speaking. I am your master {myName}  //{} where this curly brasis start we can write js
   </h3>
 }
 
 export default Hello;
 
-<Hello this is the future speaking. I am your master Prashant
+//App.jsx
+import CrazyButton from "./CrazyButton";
+import Hello from "./Hello";
+
+function App() {
+  return (
+    <div>
+      <h1>This is best react course</h1>
+
+      <Hello></Hello>
+    </div>
+  );
+}
+
+export default App;
+
+< this will we the result : 
+This is best react course
+This is future speaking. I am your master Prashant
 
 *************************************************
-//add more content on it
+//If we do some more changes and add new things in Hello.jsx .. using arrow keys => and 
+change the name from prashant to prashant jain
 
 Hello.jsx
-function Hello(){
-
-  let myName = 'Prashant';
-  let fullName = () =>{
-    return 'Prashant Jain';
-  }
-
-  return <h3>
-    Hello this is the future speaking. I am your master {fullName()}
-  </h3>
+function Hello() {
+  let myName = "Prashant";
+  let fullName = () => {
+    return "Prashant Jain";
+  };
+  return <h3>This is future speaking. I am your master {fullName()}</h3>;
 }
 
 export default Hello;
 
-<This is a best react course
-Hello this is the future speaking. I am your master Prashant Jain
+//App.jsx file same as it as above
 
+<This is best react course
+This is future speaking. I am your master Prashant Jain
 ***********************************
 //for dynamic more thing include like number
 
@@ -85,7 +165,8 @@ function Hello(){
 
 export default Hello;
 
-<MessageNo: 456 I am your master Prashant Jain
+<This is best react course
+MessageNo:456 I am your master Prashant Jain
 
 15. Dynamic Components
  1. Dynamic Content: JSX allows the 
@@ -101,7 +182,7 @@ variables, function calls, and more.
 16. Reusable Components
 we are going to create a cards
 
-Random.jsx
+going to create new component : Random.jsx
 
 function Random(){
 
@@ -134,7 +215,8 @@ export default App;
 <Random number is: 6.573713802163703
 
 ??????????????????????????????????????????????
-///when u change the number in Random.jsx and also reolad the link the number get changed. New random number is getting genrate
+///when u use math.round() change the number.  in Random.jsx and also reolad the 
+link the number get changed. New random number is getting genrate
 
 function Random(){
 
@@ -144,7 +226,7 @@ function Random(){
 }
 
 export default Random;
-<Random number is: 27
+<Random number is: 27 // when u refreh it it will change
 
 ?????????????????????????????????????????
 // when u need more random number . add in App.jsx file random 
@@ -182,7 +264,7 @@ Random number is: 14
 Random number is: 63
 
 ???????????????????????????????????????????????????????????????
-// now in background we will define color
+// now in background we will define color so we will use 2 curly brasis {{}}
 
 Random.jsx
 
