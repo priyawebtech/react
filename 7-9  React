@@ -1,0 +1,52 @@
+Complete Coding by Prashant Sir
+Youtube video link:   https://www.youtube.com/watch?v=eILUmCJhl64
+
+Github code:  https://github.com/Complete-Coding/React_Complete_YouTube
+pdf of react: file:///C:/Users/Priya/Downloads/React%20&%20Redux%20Notes.pdf
+
+in git hub of prashant sir coding in this path : 2 first-react-app
+
+
+//node_modules-- these are dependencies. don't touch these node_modules. we are using react, so u will also
+get react, dom packages
+
+///public folder--- public/ Directory: Contains static files that don't 
+change. index.html --file is also under public folder file.  images--which u show on home page, icon and favicon. 
+this type thing genrally keep in public folder.
+
+//src---actual source code. show vite has already created some source code like app.css, app.js, index.css, main.jsx
+//src/ Directory: Main folder for the React code. In source directory you have all main react code.
+    inside it genrally we will work with creating 3 folder
+    1. Assets folder react all ready have created. we will keep our images, font, videos we will keep here.
+        Images, fonts, and other static files.
+    2. components/: we can create pages small components. then we can use it. so that components code we will
+      keep here in coponents folder. Reusable parts of the UI, like buttons 
+      or headers.
+    3.styles/: CSS or stylesheets. keep in styles folder
+
+eslintrc folder: lint will provide the information that you have write something wrong in the code, mistake, warning,
+        suggestion. if you write something so give suggestion that write like this it will run fast. that tool is called
+    lint. don't touch it default config hai
+
+gitignore: these all will not check in git. gitignore have those files that we don't want that these are check in.
+
+index.html:  first file that has basic code
+
+//the most important file package.json
+package.json:  contains information about this project like name, version, dependencies on other react 
+packages. all the important information about project is keep here. from package.json -- u can directly change the name
+of the file. your app name will change not folder name.
+    two dependencies: react, react dom . latter will study on it
+
+    devDependencies: kuch ase tools and libraries hai when we write code then we need. when our project is done
+, we deploy on server, and on site then we don't need. these are those thing which help in write code.
+devDependencies -- menas download karo but file you will give somenone your app. so don't need to add there.
+
+vite.config.js---vite own config file. no specific write here. but you want to modify vite behaviour for that level
+you can do here. 
+
+package-lock.json:--- when you run npm intall. two things got created -- one is node_modules, 2nd is package-lock.json
+ package-lock.json--tell you download the latest dependencies of react. it fill tell you what finally is used. genrally don't
+check in here. if you have something gadbad or eroro. node_modules and package-lock ko delete kar again install it
+npm intall kar ligiaye. then these will new will create
+
