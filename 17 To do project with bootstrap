@@ -1,6 +1,11 @@
 cd../.. ---one folder back we have to go
 
-Now new project in project folder
+//if you have create an new folder now with terminal you want to go there write:
+PS C:\Users\Priya\OneDrive\Desktop\React Learning> cd Projects   
+//u will enter in the projects
+PS C:\Users\Priya\OneDrive\Desktop\React Learning\Projects> 
+
+//To do project : Do all the command same after : npm install < install bootstrap
 
 now new project in terminal
 npm create vite@latest
@@ -67,29 +72,88 @@ createRoot(document.getElementById('root')).render(
 
 
 //now we will do clean up
+in main.jsx : delete path : import './index.css'
+index.css : delete the file
 
-index.css do we need it or not : no we do not need it by default it become. we will delete the whole file
-from src
-
-App.css also delete the file
+App.css : delete the file 
 App.jsx we will empty it. make it like this
   function App() {
-  return 
+  return <div>Placholder</div>;
     
 }
 
 export default App
 
-
+<Placholder
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-we are going to create a folder inside src > components> inside it file AppName.jsx file
-check this file AppName.jsx
+Now we are going to start our To do app in App.jsx file . we will crete all things here and the latter palce in 
+components folder
 
-next file: AddToDo.jsx
+App.jsx
+
+function App() {
+  return (
+    <center className="todo-container">
+      <h1>ToDo App</h1>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-6">
+            <input type="text" placeholder="Enter your todo here" />
+          </div>
+          <div class="col-4">
+            <input type="date" />
+          </div>
+          <div class="col-2">
+            <button type="button" class="btn btn-success">
+              Add
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">Buy Milk</div>
+          <div class="col-4">11/6/2024</div>
+          <div class="col-2">
+            <button type="button" class="btn btn-danger">
+              Delete
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">Go to College</div>
+          <div class="col-4">11/6/2024</div>
+          <div class="col-2">
+            <button type="button" class="btn btn-danger">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </center>
+  );
+}
+
+export default App;
+
+< check on link
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+we are going to create a folder inside src > components> inside it all file we will create:
+//one by one we will move all components from these folder like header, input
+
+AppName.jsx file
+check this file AppName.jsx // prashant sit github code
+
+ AddToDo.jsx
 
 Todoitem1.jsx file
 Todoitem2.jsx file
-Now we have to create css file for styling
+//git hub code of sir
+
+Now we have to create css file for styling:
+App.css for styling of all components. 
 
 ///////////////////////////////////////////
 Now we are going to do new prject Bharat clock 2:51 min
