@@ -1,0 +1,64 @@
+Same in Fragment topic
+Next Topic: 19 Map Method
+eg:
+App.jsx
+
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+function App() {
+  let foodItems = ["Dal", "Green Vegetable", "Roti", "Salad", "Milk"];
+  return (
+    <>
+      <h1>Healty Food</h1>
+      <ul className="list-group">
+        {foodItems.map((item) => (
+          <li key={item} className="list-group-item">
+            {item}
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
+export default App;
+
+<list will show
+
+//the use of map method will help you to create once and you can incrase item by adding name in the foodItem like
+ghee
+
+
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+function App() {
+  let foodItems = ["Dal", "Green Vegetable", "Roti", "Salad", "Milk", "Ghee"];
+  return (
+    <>
+      <h1>Healty Food</h1>
+      <ul className="list-group">
+        {foodItems.map((item) => (
+          <li key={item} className="list-group-item">
+            {item}
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
+export default App;
+
+<Ghee will also add in the list
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+19. Map Method
+ 1. Purpose: Render lists from array data.
+ 2. JSX Elements: Transform array items into JSX.
+ 3. Inline Rendering: Directly inside JSX
+ {items.map(item => <li key={item.id}>{item.name}</li>)}
+ 4. Key Prop: Assign unique key for optimized re-renders.
+ <div key={item.id}>{item.name}</div>
