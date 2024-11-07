@@ -1,4 +1,5 @@
 18. Fragments  3: 03 video
+cd.. ---go back in folder
 New project
 PS C:\Users\Priya\first-react-app> cd Fragments
 PS C:\Users\Priya\first-react-app\Fragments> npm create vite@latest
@@ -41,7 +42,38 @@ export default App;
 ////
 PS C:\Users\Priya\first-react-app\Fragments\learning-fragment> npm run dev
 
-App.jsx : add --- import React from "react";
+now the server will run
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+Now we will start our work Healthy Food
+list item in bootstrap
+
+
+App.jsx
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+function App() {
+  return (
+    <div>
+      <h1>Healty Food</h1>
+
+      <ul class="list-group">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul>
+    </div>
+  );
+}
+
+export default App;
+< result on the link
+
+///here is one issue we have to use <div> to add our two components one is <h1> and <ul>. so we will get 
+extra div on server to avoid this we use fragments 
+
 18. Fragments
  1. What? 
 Allows grouping of multiple elements without 
@@ -54,6 +86,34 @@ parent.
  1. <React.Fragment>...</React.Fragment>
  2. Short: <>...</>
 
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+App.jsx  // we have to import react and add react.Fragment or the next shortcut is <> </> is also available
+
+import React from "react";   // you have to import this file
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+function App() {
+  return (
+    <React.Fragment>
+      <h1>Healty Food</h1>
+
+      <ul class="list-group">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul>
+    </React.Fragment>
+  );
+}
+
+export default App;
+
+< it will show same and remove extra div to use it
+
 <<<<<<<<<<<<<<<<<<<<<<<<<<<
  1. <React.Fragment>...</React.Fragment> 
 first one you can use and another one also can use
@@ -61,7 +121,7 @@ first one you can use and another one also can use
 
  1. <React.Fragment>...</React.Fragment>
     App.jsx 
-    import React from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -84,9 +144,10 @@ export default App;
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<
 2.  2. Short: <>...</> 
-this one u can use mostly this one use
+this one u can use mostly this one use don't need to import react : import React from "react";
   App.jsx 
-  import "bootstrap/dist/css/bootstrap.min.css";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 function App() {
@@ -105,9 +166,9 @@ function App() {
 }
 
 export default App;
-
+< result will show
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-19 Map Method
+Next Topic: 19 Map Method
 eg:
 App.jsx
   import "bootstrap/dist/css/bootstrap.min.css";
