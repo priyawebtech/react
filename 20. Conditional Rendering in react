@@ -1,2 +1,192 @@
 20. Conditional Rendering in react
 3:23 video
+
+Conditional Rendering
+• Displaying content based on certain conditions.
+• Allows for dynamic user interfaces.
+Methods
+• If-else statements: Choose between two blocks
+of content.
+• Ternary operators: Quick way to choose
+between two options.
+• Logical operators: Useful for rendering content
+when a condition is true.
+Benefits
+• Enhances user experience.
+• Reduces unnecessary rendering.
+• Makes apps more interactive and responsive.
+//if we want that our food items will not show and show I am still hungry. means that condition we create
+//Methods
+• If-else statements: Choose between two blocks
+of content.
+
+
+App.jsx
+
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+function App() {
+  let foodItems = ["Dal", "Green Vegetables", "Roti", "Salad", "Milk", "Ghee"];
+ // let foodItems = [];
+
+  if (foodItems.length === 0) {
+    return <h3>I am still hungry</h3>;
+  }
+  return (
+    <>
+      <h1>Healty Food</h1>
+      <ul className="list-group">
+        {foodItems.map((itemproduct) => (
+          <li key={itemproduct} className="list-group-item">
+            {itemproduct}
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
+export default App;
+
+
+<Dal", "Green Vegetables", "Roti", "Salad", "Milk", "Ghee"  --list
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+don' want to show list and only I am still hundgry
+
+App.jsx
+
+
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+function App() {
+  //let foodItems = ["Dal", "Green Vegetables", "Roti", "Salad", "Milk", "Ghee"];
+  let foodItems = [];
+
+  if (foodItems.length === 0) {
+    return <h3>I am still hungry</h3>;
+  }
+  return (
+    <>
+      <h1>Healty Food</h1>
+      <ul className="list-group">
+        {foodItems.map((itemproduct) => (
+          <li key={itemproduct} className="list-group-item">
+            {itemproduct}
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
+export default App;
+< I am still hungry
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//Method
+//• Ternary operators: Quick way to choose
+between two options.
+//Now we want to show Healty Food H1 tag with I am still hungry so for that Ternary operators can be use
+
+App.jsx
+
+
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+function App() {
+  //let foodItems = ["Dal", "Green Vegetables", "Roti", "Salad", "Milk", "Ghee"];
+  let foodItems = [];
+
+  return (
+    <>
+      <h1>Healty Food</h1>
+      {foodItems.length === 0 ? <h3>I am still hungry</h3> : null}
+      <ul className="list-group">
+        {foodItems.map((itemproduct) => (
+          <li key={itemproduct} className="list-group-item">
+            {itemproduct}
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
+export default App;
+<Healty Food
+I am still hungry
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ternary operators we can take out value also show above
+
+App.jsx
+
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+function App() {
+  //let foodItems = ["Dal", "Green Vegetables", "Roti", "Salad", "Milk", "Ghee"];
+  let foodItems = [];
+
+  let emptyMessage = foodItems.length === 0 ? <h3>I am still hungry</h3> : null;
+  return (
+    <>
+      <h1>Healty Food</h1>
+      {emptyMessage}
+      <ul className="list-group">
+        {foodItems.map((itemproduct) => (
+          <li key={itemproduct} className="list-group-item">
+            {itemproduct}
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
+export default App;
+<Healty Food
+I am still hungry
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+• Logical operators: Useful for rendering content
+when a condition is true.
+
+App.jsx
+
+
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+function App() {
+  //let foodItems = ["Dal", "Green Vegetables", "Roti", "Salad", "Milk", "Ghee"];
+  let foodItems = [];
+
+  return (
+    <>
+      <h1>Healty Food</h1>
+      {foodItems.length === 0 && <h3>I am still hungry</h3>}
+      <ul className="list-group">
+        {foodItems.map((itemproduct) => (
+          <li key={itemproduct} className="list-group-item">
+            {itemproduct}
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
+export default App;
+<<Healty Food
+I am still hungry
+
+
