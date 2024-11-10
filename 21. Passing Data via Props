@@ -1,0 +1,24 @@
+21. Passing Data via Props
+
+components  
+FoodItems.jsx
+ErrorMessage.jsx
+Item.jsx --- 
+
+
+Usage
+• Pass data from parent to child component.
+• Makes components reusable.
+• Defined as attributes in JSX.
+
+Examples
+<Header title="My App" />
+
+<Item foodItem={item}></Item>
+
+ 22. CSS Modules
+                Item.module.css file for css
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ Project: TODO App UI
+
+  TodoItem.jsx              
