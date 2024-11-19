@@ -21,36 +21,6 @@ Benefits
 of content.
 
 
-App.jsx
-
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-
-function App() {
-  let foodItems = ["Dal", "Green Vegetables", "Roti", "Salad", "Milk", "Ghee"];
- // let foodItems = [];
-
-  if (foodItems.length === 0) {
-    return <h3>I am still hungry</h3>;
-  }
-  return (
-    <>
-      <h1>Healty Food</h1>
-      <ul className="list-group">
-        {foodItems.map((itemproduct) => (
-          <li key={itemproduct} className="list-group-item">
-            {itemproduct}
-          </li>
-        ))}
-      </ul>
-    </>
-  );
-}
-
-export default App;
-
-
-<Dal", "Green Vegetables", "Roti", "Salad", "Milk", "Ghee"  --list
 
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -125,7 +95,7 @@ I am still hungry
 
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Ternary operators we can take out value also show above
+Ternary operators we can take out value also show above and save in variable 
 
 App.jsx
 
